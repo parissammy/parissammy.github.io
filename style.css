@@ -1,0 +1,35 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#1b1f24;background:#fff}
+a{color:#0b5cad}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:9}
+.top{border-bottom:1px solid #e3e7ec;background:#fff;position:sticky;top:0;z-index:5}
+.bar{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px}
+.brand{font-size:1.05rem}
+nav a{margin-right:14px;text-decoration:none;font-size:.95rem}
+.hero{background:#f3f6f9;padding:48px 0 40px;margin-bottom:12px}
+.eyebrow{text-transform:uppercase;letter-spacing:.06em;font-size:.8rem;color:#55606c;margin:0}
+h1{font-size:clamp(1.6rem,4.5vw,2.4rem);line-height:1.2;margin:.3em 0 .5em}
+h2{font-size:1.45rem;margin:1.8em 0 .5em}
+.lead{font-size:1.1rem;max-width:44em}
+.btn{display:inline-block;background:#0b5cad;color:#fff;border:0;border-radius:6px;padding:12px 22px;font-size:1rem;font-weight:600;text-decoration:none;cursor:pointer}
+.btn:hover,.btn:focus{background:#084a8c}
+.or{margin-left:10px;color:#55606c}
+.steps li,.terms li{margin-bottom:.5em}
+.note,.small{color:#55606c;font-size:.93rem}
+.disclosure{border-left:4px solid #0b5cad;background:#f7f9fb;padding-top:4px;padding-bottom:12px}
+.form{background:#f7f9fb;border:1px solid #e3e7ec;border-radius:8px;padding:20px;margin-bottom:20px}
+fieldset{border:0;padding:0;margin:0 0 14px}
+legend{font-weight:700;margin-bottom:6px}
+label{display:block;font-weight:600;font-size:.93rem;margin:10px 0 4px}
+input,textarea{width:100%;padding:10px;border:1px solid #b9c2cc;border-radius:5px;font:inherit;background:#fff}
+input:focus,textarea:focus,.btn:focus{outline:3px solid #8cc0f2;outline-offset:1px}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0 14px}
+.consent{display:flex;gap:10px;align-items:flex-start;margin-top:8px}
+.consent input{width:20px;height:20px;margin-top:4px;flex:none}
+.consent label{margin:0;font-weight:600}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.foot{border-top:1px solid #e3e7ec;margin-top:40px;padding:20px 0;font-size:.9rem;color:#55606c}
+.foot p{margin:.3em 0}
+.thanks{padding-top:60px;min-height:60vh}
