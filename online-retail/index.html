@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Flex Concierge Group LLC, Online Retail sells everyday home, pet, office and automotive goods through online marketplaces, shipped from US warehouses.">
+  <title>Flex Concierge Group LLC, Online Retail</title>
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --card: #ffffff;
+      --ink: #1b1b1b;
+      --muted: #4a4a4a;
+      --line: #e2ddd4;
+      --accent: #1f4a3c;
+      --accent-soft: #e7efe9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    .wrap {
+      width: min(720px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2.5rem 0 2rem;
+    }
+
+    header {
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .kicker {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 0.5rem;
+    }
+
+    h1 {
+      font-size: clamp(1.7rem, 4vw, 2.25rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    main {
+      display: grid;
+      gap: 1.25rem;
+      padding: 1.5rem 0 2rem;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+    }
+
+    h2 {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 0.6rem;
+    }
+
+    p {
+      margin: 0 0 0.8rem;
+      color: var(--ink);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.6rem;
+    }
+
+    li {
+      background: var(--accent-soft);
+      border-radius: 8px;
+      padding: 0.7rem 0.85rem;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover,
+    a:focus-visible {
+      text-decoration-thickness: 2px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding-top: 1rem;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 520px) {
+      .wrap {
+        width: min(720px, calc(100% - 1.5rem));
+        padding-top: 1.75rem;
+      }
+
+      ul {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 1.1rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="kicker">Flex Concierge Group LLC</p>
+      <h1>Online Retail</h1>
+    </header>
+
+    <main>
+      <section aria-labelledby="about">
+        <h2 id="about">About</h2>
+        <p>Flex Concierge Group LLC, Online Retail sells everyday home, pet, office and automotive goods through online marketplaces.</p>
+        <p>We currently sell on eBay and TikTok Shop, with Walmart Marketplace planned for the future. Orders ship from US warehouses.</p>
+      </section>
+
+      <section aria-labelledby="sell">
+        <h2 id="sell">What we sell</h2>
+        <ul>
+          <li>Home goods</li>
+          <li>Pet goods</li>
+          <li>Office goods</li>
+          <li>Automotive goods</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="shipping">
+        <h2 id="shipping">Shipping and returns</h2>
+        <p>Orders ship from US warehouses, usually in 2 to 7 business days.</p>
+        <p>Returns are handled through the marketplace you bought on.</p>
+      </section>
+
+      <section aria-labelledby="contact">
+        <h2 id="contact">Contact</h2>
+        <p><a href="mailto:flexconcierge@gmail.com">flexconcierge@gmail.com</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Flex Concierge Group LLC</p>
+    </footer>
+  </div>
+</body>
+</html>
